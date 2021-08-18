@@ -489,7 +489,7 @@
             'remoteConfig',
             'performance',
           ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+          if(loadEl) loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
         } catch (e) {
           console.warn(e);
           if(loadEl) loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
