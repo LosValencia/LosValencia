@@ -1588,6 +1588,10 @@ z-index: 1;
 background: #052501;
 }
 
+.location_icon_bottum_parent {
+     align-self: center;
+}
+
 .location_icon_bottum_tt {
 width: 100%;
 }
